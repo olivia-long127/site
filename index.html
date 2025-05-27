@@ -33,7 +33,7 @@
             if (distanceX < threshold && distanceY < threshold) {
               context.lineWidth = ((threshold * 2) - (distanceX + distanceY)) / 50;
               let color = 200 - Math.floor(distanceX + distanceY);
-              context.strokeStyle = 'rgb(' + color + ',' + color + ',' + color + ')';
+              context.strokeStyle = 'white';
               line(particle, particle2);
             }
           }
